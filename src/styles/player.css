@@ -1,0 +1,51 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.player
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.time-control,.play-control
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+.time-control p
+{
+    padding: 2px 5px;
+    font-size: 12px;
+}
+.time-control input
+{
+    width: 100%;
+}
+.play-control
+{
+    width: 30%;
+    background-color: none;
+    margin: 10px 0;
+    padding: 5px;
+}
+.play-control svg
+{
+    cursor: pointer;
+}
+@media (max-width: 768px)
+{
+  .time-control
+  {
+    width:90%;
+  }
+  .play-control
+  {
+      width: 60%;
+  }
+}

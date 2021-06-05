@@ -1,0 +1,45 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.song-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+.song-img
+{
+    animation: App-logo-spin infinite 20s linear;
+    width: 20%;
+    border-radius: 50%;
+}
+.song-container h1
+{
+    color: #000;
+    padding: 5px 6px;
+}
+.song-container h2
+{
+    color: #000;
+    padding: 4px 3px;
+}
+
+
+@media (max-width:768px) {
+    .song-img{
+        width: 60%;
+    }
+}
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

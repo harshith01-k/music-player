@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+.library {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 100%;
+  /* background-color: lightblue; */
+  box-shadow: 2px 2px 50px gray;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.library h2 {
+  padding: 1rem;
+}
+
+.library-song {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem 2rem 1rem 2rem;
+}
+.library-song:hover {
+  background-color: rgb(255, 222, 222);
+}
+.library-songs img {
+  width: 30%;
+}
+.song-description {
+  padding-left: 1rem;
+}
+.song-description h3 {
+  font-size: 1rem;
+}
+.song-description h4 {
+  font-size: 0.75rem;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(155, 155, 155);
+}
+
+@media (max-width: 1300px)
+{
+  .library
+  {
+    display: none;
+  }
+}
